@@ -1,1 +1,16 @@
-ただのメモ
+前提UniryPackageがあります。
+かならず、先に以下の2つをインポートしてください。
+
+① VRCSDK3
+VRChat公式サイトから入手。SDK2とお間違えの無いように。
+
+② UdonSharp
+下記URLから入手
+https://github.com/Merlin-san/UdonSharp/releases
+
+
+画面の中から
+「UdonSharp_vX.XX.X,unitypackage」を取得
+
+※ X.XX.Xはバージョン。なるたけ新しいのでOK
+
