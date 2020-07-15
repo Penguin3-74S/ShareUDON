@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Simple UDON Gimmicks</title>
+<link rel="stylesheet" media="all" href="css/ress.min.css" />
+<link rel="stylesheet" media="all" href="css/style.css" />
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/style.js"></script>
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="img/favicon.png">
+    
+</head>
+<body>
+<header>    
+<div class="container">
+<div class="row">
+    <div class="col span-12">
+    <div class="head">
+        <h1><a href="index.html">Simple UDON Gimmicks</a></h1>
+		<div class="telbox"></div>
+        </div>
+    </div></div>
+<div class="row">
+    <div class="col span-12">
+        <nav>
+        <div id="open"><img src="img/button.png"></div>
+        <div id="close"><img src="img/button2.png"></div>    
+            <div id="navi">
+        <ul>
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="_SimpleSwitch.html">シンプルスイッチ</a></li>
+            <li><a href="_PlayerTeleport.html">テレポートする扉</a></li>
+            <li><a href="_ObjectPool.html">オブジェクトプール</a></li>
+            <li><a href="_CuckooClock.html">時計</a></li>
+            <li><a href="_ExpansionMenu.html">拡張メニュー</a></li>
+            </ul>
+                </div>
+        </nav>
+    </div>
+        </div>
+    </div>
+    </header>
+    <div class="mainimg">
+              <img src="img/Door.png" alt="テレポート" width="800" height="4000">
+        </div>
+    <main>
+	<article>
+<div class="container">
+<div class="row">
+    <div class="col span-12">
+	<div class="breadcrumb">
+		<ul>
+			<li><a href="index.html">ホーム</a> > テレポートする扉</li>
+		</ul>
+		</div>
+	    <p>
+		これはゲーム中のプレイヤーをテレポートさせる機能です。<br>
+		インタラクトするとテレポートする機能と、接触するとテレポートする機能の二種を用意しました。
+		</p>
+		<h2 class="underline">クイックスタート</h2>
+		<ol>
+			<li>Assets\_SimpleUDON_Gimmick\Prefabフォルダから、PlayerTeleportプレファブをシーンに置く</li>
+			<li>VRchatSDKのコントロールパネルからBuild&Testを選択し、動作を確認する</li>
+		</ol>
+
+	<h2 class="underline">機能解説</h2>
+	<h4 >OnTriggerPlayerTeleport</h4>
+	<p>	プレイヤーのあたり判定に反応してプレイヤーをテレポートさせます。<br>
+		各パラメータは以下の通りです。
+	<pre>
+	<code>
+toPoint
+プレイヤーの移動先です。
+	</code>
+	</pre>
+	</p>
+	<h4 >OnInteractPlayerTeleport</h4>
+	<p>
+		インタラクトするとプレイヤーをテレポートさせます。<br>
+		各パラメータは以下の通りです。
+	<pre>
+	<code>
+toPoint
+プレイヤーの移動先です。
+
+	</code>
+	</pre>
+	</p>	
+	</div>
+	<div class="col span-4">
+	</div>
+    </div>    
+        </div>
+	</article>
+    </main>
+    <footer>
+<div class="container">
+<div class="row">
+    <div class="col span-4">
+        <h5>Twitter</h5>
+        <p><a href="https://mobile.twitter.com/Penguin3_vrc" > <img src="img/Icon.jpg" alt="Twitter" width="340" height="340"></a></p>
+    </div>
+    <div class="col span-4">
+        <h5>Booth</h5>
+        <p><a href="https://74-south.booth.pm/" > <img src="img/S74Line2.png" alt="Booth" width="340" height="340"></a></p>
+    </div>
+    <div class="col span-4">
+        <h5>VRC_Sample</h5>
+        <p><a href="https://vrchat.com/i/toff-laurenlorenzo-c5963" > <img src="img/TOP.png" alt="VRC" width="340" height="340"></a></p>
+    </div>
+        </div>
+</div>
+    </footer>
+    <div class="copyright">
+<div class="container">
+<div class="row">
+    <div class="col">
+    Copyright © <a href="https://popo-design.net" target="_blank">popodesign. </a>
+    
+    </div>    
+        </div>
+    </div>
+        </div>
+<p id="pagetop"><a href="#">TOP</a></p>    
+</body>
+</html>

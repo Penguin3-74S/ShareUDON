@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Simple UDON Gimmicks</title>
+<link rel="stylesheet" media="all" href="css/ress.min.css" />
+<link rel="stylesheet" media="all" href="css/style.css" />
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/style.js"></script>
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="img/favicon.png">
+    
+</head>
+<body>
+<header>    
+<div class="container">
+<div class="row">
+    <div class="col span-12">
+    <div class="head">
+        <h1><a href="index.html">Simple UDON Gimmicks</a></h1>
+		<div class="telbox"></div>
+        </div>
+    </div></div>
+<div class="row">
+    <div class="col span-12">
+        <nav>
+        <div id="open"><img src="img/button.png"></div>
+        <div id="close"><img src="img/button2.png"></div>    
+            <div id="navi">
+        <ul>
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="_SimpleSwitch.html">シンプルスイッチ</a></li>
+            <li><a href="_PlayerTeleport.html">テレポートする扉</a></li>
+            <li><a href="_ObjectPool.html">オブジェクトプール</a></li>
+            <li><a href="_CuckooClock.html">時計</a></li>
+            <li><a href="_ExpansionMenu.html">拡張メニュー</a></li>
+            </ul>
+                </div>
+        </nav>
+    </div>
+        </div>
+    </div>
+    </header>
+    <div class="mainimg">
+              <img src="img/Clock.png" alt="時計" width="800" height="400">
+        </div>
+    <main>
+	<article>
+<div class="container">
+<div class="row">
+    <div class="col span-12">
+	<div class="breadcrumb">
+		<ul>
+			<li><a href="index.html">ホーム</a> > アナログ時計</li>
+		</ul>
+		</div>
+	    <p>
+		これは、アナログ時計です。<br>
+		デフォルトは日本標準時間です。世界のどこから繋いでも同じ時間が表示されます。
+		</p>
+		<h2 class="underline">クイックスタート</h2>
+		<ol>
+			<li>Assets\_SimpleUDON_Gimmick\Prefabフォルダから、CuckooClockプレファブをシーンに置く</li>			
+			<li>VRchatSDKのコントロールパネルからBuild&Testを選択し、動作を確認する</li>
+		</ol>
+	<h2 class="underline">機能解説</h2>
+	<h4>CuckooClock</h4>
+	<p>	時間の管理と共に、秒針、短針、長針の制御を行います。<br>
+		各パラメータは以下の通りです。
+	<pre>
+	<code>
+ByTime
+ タイムゾーンを指定します。
+	
+HourHand
+MinuteHand
+SecoundHand
+ それぞれ秒針、短針、長針のオブジェクトを登録します。
+
+(オプション)
+HhourTriggers
+ 一時間ごとにアクティブになるオブジェクトを登録します。
+アニメーションやパーティクルの付いたオブジェクトを登録しておいて、
+一時間ごとに鳩が飛び出す仕組みなどが作れます。
+  
+	</code>
+	</pre>
+	</p>
+<h4>タイムゾーン</h4>
+	<p>	以下、タイムゾーンの一例となります。<br>
+		どこ向けのワールドなのかによって選んで使用してください。
+	<pre>
+	<code>
+GMT Standard Time
+
+Greenwich Standard Time
+
+W. Europe Standard Time
+
+Central Europe Standard Time
+
+Romance Standard Time
+
+Central European Standard Time
+
+W. Central Africa Standard Time
+
+Namibia Standard Time
+
+Jordan Standard Time
+
+GTB Standard Time
+
+Middle East Standard Time
+
+Egypt Standard Time
+
+Syria Standard Time
+
+South Africa Standard Time
+
+FLE Standard Time
+
+Israel Standard Time
+
+E. Europe Standard Time
+
+Arabic Standard Time
+
+Arab Standard Time
+
+Russian Standard Time
+
+E. Africa Standard Time
+
+Iran Standard Time
+
+Arabian Standard Time
+
+Azerbaijan Standard Time
+
+Mauritius Standard Time
+
+Georgian Standard Time
+
+Caucasus Standard Time
+
+Afghanistan Standard Time
+
+Ekaterinburg Standard Time
+
+Pakistan Standard Time
+
+West Asia Standard Time
+
+India Standard Time
+
+Sri Lanka Standard Time
+
+Nepal Standard Time
+
+Central Asia Standard Time
+
+Bangladesh Standard Time
+
+N. Central Asia Standard Time
+
+Myanmar Standard Time
+
+SE Asia Standard Time
+
+North Asia Standard Time
+
+China Standard Time
+
+North Asia East Standard Time
+
+Singapore Standard Time
+
+W. Australia Standard Time
+
+Taipei Standard Time
+
+Ulaanbaatar Standard Time
+
+Tokyo Standard Time
+
+Korea Standard Time
+
+Yakutsk Standard Time
+
+Cen. Australia Standard Time
+
+AUS Central Standard Time
+
+E. Australia Standard Time
+
+AUS Eastern Standard Time
+
+West Pacific Standard Time
+
+Tasmania Standard Time
+
+Vladivostok Standard Time
+
+Central Pacific Standard Time
+
+New Zealand Standard Time
+</code>
+</pre>
+</p>
+	</div>
+	<div class="col span-4">
+	</div>
+    </div>    
+        </div>
+	</article>
+    </main>
+    <footer>
+<div class="container">
+<div class="row">
+    <div class="col span-4">
+        <h5>Twitter</h5>
+        <p><a href="https://mobile.twitter.com/Penguin3_vrc" > <img src="img/Icon.jpg" alt="Twitter" width="340" height="340"></a></p>
+    </div>
+    <div class="col span-4">
+        <h5>Booth</h5>
+        <p><a href="https://74-south.booth.pm/" > <img src="img/S74Line2.png" alt="Booth" width="340" height="340"></a></p>
+    </div>
+    <div class="col span-4">
+        <h5>VRC_Sample</h5>
+        <p><a href="https://vrchat.com/i/toff-laurenlorenzo-c5963" > <img src="img/TOP.png" alt="VRC" width="340" height="340"></a></p>
+    </div>
+        </div>
+</div>
+    </footer>
+    <div class="copyright">
+<div class="container">
+<div class="row">
+    <div class="col">
+    Copyright © <a href="https://popo-design.net" target="_blank">popodesign. </a>
+    
+    </div>    
+        </div>
+    </div>
+        </div>
+<p id="pagetop"><a href="#">TOP</a></p>    
+</body>
+</html>

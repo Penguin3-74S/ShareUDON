@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Simple UDON Gimmicks</title>
+<link rel="stylesheet" media="all" href="css/ress.min.css" />
+<link rel="stylesheet" media="all" href="css/style.css" />
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/style.js"></script>
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="img/favicon.png">
+    
+</head>
+<body>
+<header>    
+<div class="container">
+<div class="row">
+    <div class="col span-12">
+    <div class="head">
+        <h1><a href="index.html">Simple UDON Gimmicks</a></h1>
+		<div class="telbox"></div>
+        </div>
+    </div></div>
+<div class="row">
+    <div class="col span-12">
+        <nav>
+        <div id="open"><img src="img/button.png"></div>
+        <div id="close"><img src="img/button2.png"></div>    
+            <div id="navi">
+        <ul>
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="_SimpleSwitch.html">シンプルスイッチ</a></li>
+            <li><a href="_PlayerTeleport.html">テレポートする扉</a></li>
+            <li><a href="_ObjectPool.html">オブジェクトプール</a></li>
+            <li><a href="_CuckooClock.html">時計</a></li>
+            <li><a href="_ExpansionMenu.html">拡張メニュー</a></li>
+            </ul>
+                </div>
+        </nav>
+    </div>
+        </div>
+    </div>
+    </header>
+    <div class="mainimg">
+              <img src="img/Switch.png" alt="スイッチ" width="800" height="4000">
+        </div>
+    <main>
+	<article>
+<div class="container">
+<div class="row">
+    <div class="col span-12">
+	<div class="breadcrumb">
+		<ul>
+			<li><a href="index.html">ホーム</a> > シンプルスイッチ</li>
+		</ul>
+		</div>
+		<p>
+		これはごく単純なON/OFFが切り替えできるスイッチです。<br>
+		みんな大好きミラーの表示や、ライトの切り替え、椅子判定の表示/非表示などで使うことになるでしょう。
+		</p>
+    
+		<h2 class="underline">クイックスタート</h2>
+				<ol>
+			<li>Assets\_PenguinUDONGimmicks\Prefab\Systemフォルダから、SimpleSwitchプレファブをシーンに置く</li>
+			<li>VRchatSDKのコントロールパネルからBuild&Testを選択し、SimpleSwitchをUseして動作を確認する</li>
+		</ol>
+		
+<p></p>
+
+	<h2 class="underline">機能解説</h2>
+	<h4 >SimpleSwitch</h4>
+	<p>
+		ごくシンプルなオブジェクトのON/OFFを行います。<br>
+		ONの時に表示状態にするオブジェクト。OFFの時に表示状態にするオブジェクトをそれぞれ選択できます。これによって、単に消したりつけたりだけでなく、2種のオブジェクトを交互に表示/非表示することができます。。<br>
+		各パラメータは以下の通りです。
+	<pre>
+		<code>
+IsSync
+オブジェクトの表示/非表示を同期します。
+
+Switch_ON
+Switch_OFF
+スイッチがONの時に表示されるオブジェクトと、OFFの時に表示されるオブジェクトを設定します。
+主にスイッチのコライダーの切り替えに使用してください。
+
+IsON
+最初にONの状態にするかどうか
+
+Switch_audioSource
+Switch_ON_sound
+Switch_OFF_sound
+スイッチを切り替えた際に鳴らすAudioclipと、発音元となるAudiosourceを登録します。
+無くても機能しますが、あったほうが良いでしょう。
+
+ActiveObjects
+DesableObjects
+スイッチがONの時に表示されるオブジェクトと、OFFの時に表示されるオブジェクトです。
+	</code>	
+	</pre>
+	</div>
+	<div class="col span-4">
+	</div>
+    </div>    
+        </div>
+	</article>
+    </main>
+    <footer>
+<div class="container">
+<div class="row">
+    <div class="col span-4">
+        <h5>Twitter</h5>
+        <p><a href="https://mobile.twitter.com/Penguin3_vrc" > <img src="img/Icon.jpg" alt="Twitter" width="340" height="340"></a></p>
+    </div>
+    <div class="col span-4">
+        <h5>Booth</h5>
+        <p><a href="https://74-south.booth.pm/" > <img src="img/S74Line2.png" alt="Booth" width="340" height="340"></a></p>
+    </div>
+    <div class="col span-4">
+        <h5>VRC_Sample</h5>
+        <p><a href="https://vrchat.com/i/toff-laurenlorenzo-c5963" > <img src="img/TOP.png" alt="VRC" width="340" height="340"></a></p>
+    </div>
+        </div>
+</div>
+    </footer>
+    <div class="copyright">
+<div class="container">
+<div class="row">
+    <div class="col">
+    Copyright © <a href="https://popo-design.net" target="_blank">popodesign. </a>
+    
+    </div>    
+        </div>
+    </div>
+        </div>
+<p id="pagetop"><a href="#">TOP</a></p>    
+</body>
+</html>

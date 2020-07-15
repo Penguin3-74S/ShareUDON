@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Simple UDON Gimmicks</title>
+<link rel="stylesheet" media="all" href="css/ress.min.css" />
+<link rel="stylesheet" media="all" href="css/style.css" />
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/style.js"></script>
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="img/favicon.png">
+    
+</head>
+<body>
+<header>    
+<div class="container">
+<div class="row">
+    <div class="col span-12">
+    <div class="head">
+        <h1><a href="index.html">Simple UDON Gimmicks</a></h1>
+		<div class="telbox"></div>
+        </div>
+    </div></div>
+<div class="row">
+    <div class="col span-12">
+        <nav>
+        <div id="open"><img src="img/button.png"></div>
+        <div id="close"><img src="img/button2.png"></div>    
+            <div id="navi">
+        <ul>
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="_SimpleSwitch.html">シンプルスイッチ</a></li>
+            <li><a href="_PlayerTeleport.html">テレポートする扉</a></li>
+            <li><a href="_ObjectPool.html">オブジェクトプール</a></li>
+            <li><a href="_CuckooClock.html">時計</a></li>
+            <li><a href="_ExpansionMenu.html">拡張メニュー</a></li>
+            </ul>
+                </div>
+        </nav>
+    </div>
+        </div>
+    </div>
+    </header>
+    <div class="mainimg">
+              <img src="img/ObjectPool.png" alt="オブジェクトプール" width="800" height="4000">
+        </div>
+    <main>
+	<article>
+<div class="container">
+<div class="row">
+    <div class="col span-12">
+	<div class="breadcrumb">
+		<ul>
+			<li><a href="index.html">ホーム</a> > オブジェクトプール</li>
+		</ul>
+		</div>
+		<p>
+		オブジェクトを任意に出現させる機能です。<br>
+		UDONでは、インスタンスされたオブジェクトの位置が同期されないという破滅的なバグが存在します。<br>
+		そのため、シンプルにオブジェクトを増やすことはお勧めできません。
+		</p>
+    
+		<h2 class="underline">クイックスタート</h2>
+				<ol>
+			<li>Assets\_SimpleUDON_Gimmick\Prefabフォルダから、ObjectPoolプレファブをシーンに置く</li>
+			<li>ObjectPoolのPoolObjectsに、出現させるオブジェクトを設定する</li>
+			<li>VRchatSDKのコントロールパネルからBuild&Testを選択し、Useして動作を確認する</li>
+		</ol>
+		
+<p></p>
+
+	<h2 class="underline">機能解説</h2>
+	<h4 >ObjectsPool</h4>
+	<p>
+		保持したオブジェクトを、インタラクトに反応して順次出現させます。<br>
+		オブジェクトのストックが尽きると、無反応になります。<br>
+		再使用するためには、表示中のオブジェクトを非表示にする必要があります。<br>
+		各パラメータは以下の通りです。
+	<pre>
+		<code>
+IsSync
+出現を同期させるかどうか。
+後からワールドに入ったプレイヤーに、すでに表示中のオブジェクトを同期することはありません。
+
+IsResetVelocity
+出現と同時に、オブジェクトの移動や回転をリセットするかどうか。
+オブジェクトにRigidbodyが付いている場合だけ有効です。
+
+PoolObjects
+出現させるオブジェクトの配列。
+全て同じ種類のオブジェクトである必要はありませんので、
+まったく違うオブジェクトが順番に出現するようにもできます。
+
+Locations
+オブジェクトを出現させる位置と角度
+		</code>
+	</pre>
+	</div>
+	<div class="col span-4">
+	</div>
+    </div>    
+        </div>
+	</article>
+    </main>
+    <footer>
+<div class="container">
+<div class="row">
+    <div class="col span-4">
+        <h5>Twitter</h5>
+        <p><a href="https://mobile.twitter.com/Penguin3_vrc" > <img src="img/Icon.jpg" alt="Twitter" width="340" height="340"></a></p>
+    </div>
+    <div class="col span-4">
+        <h5>Booth</h5>
+        <p><a href="https://74-south.booth.pm/" > <img src="img/S74Line2.png" alt="Booth" width="340" height="340"></a></p>
+    </div>
+    <div class="col span-4">
+        <h5>VRC_Sample</h5>
+        <p><a href="https://vrchat.com/i/toff-laurenlorenzo-c5963" > <img src="img/TOP.png" alt="VRC" width="340" height="340"></a></p>
+    </div>
+        </div>
+</div>
+    </footer>
+    <div class="copyright">
+<div class="container">
+<div class="row">
+    <div class="col">
+    Copyright © <a href="https://popo-design.net" target="_blank">popodesign. </a>
+    
+    </div>    
+        </div>
+    </div>
+        </div>
+<p id="pagetop"><a href="#">TOP</a></p>    
+</body>
+</html>

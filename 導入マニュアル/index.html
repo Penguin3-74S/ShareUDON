@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Simple UDON Gimmicks</title>
+<link rel="stylesheet" media="all" href="css/ress.min.css" />
+<link rel="stylesheet" media="all" href="css/style.css" />
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/style.js"></script>
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="img/favicon.png">
+    
+</head>
+<body>
+<header>    
+<div class="container">
+<div class="row">
+    <div class="col span-12">
+    <div class="head">
+        <h1><a href="index.html">Simple UDON Gimmicks</a></h1>
+		<div class="telbox"></div>
+        </div>
+    </div></div>
+<div class="row">
+    <div class="col span-12">
+        <nav>
+        <div id="open"><img src="img/button.png"></div>
+        <div id="close"><img src="img/button2.png"></div>    
+            <div id="navi">
+        <ul>
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="_SimpleSwitch.html">シンプルスイッチ</a></li>
+            <li><a href="_PlayerTeleport.html">テレポートする扉</a></li>
+            <li><a href="_ObjectPool.html">オブジェクトプール</a></li>
+            <li><a href="_CuckooClock.html">時計</a></li>
+            <li><a href="_ExpansionMenu.html">拡張メニュー</a></li>
+            </ul>
+                </div>
+        </nav>
+    </div>
+        </div>
+    </div>
+    </header>
+    <div class="mainimg">
+              <img src="img/TOP.png" alt="メイン画像">
+        </div>
+    <main>
+<div class="container">
+<div class="row">
+    <div class="col span-12">
+    <div class="news">
+		<h2>更新履歴</h2>
+		<ul>
+			<li>2020.7.15　公開</li>
+		</ul>	
+	</div>
+    <div class="news">
+		<h2>License</h2>
+		<ul>
+			<a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.ja"><img alt="クリエイティブ・コモンズ・ライセンス" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />この 作品 は <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.ja">クリエイティブ・コモンズ 表示 4.0 国際 ライセンス</a>の下に提供されています。
+		</ul>	
+	</div>
+    <div class="main">
+		<h2 class="underline">導入手順</h2>
+		<ol>
+			<li>Unityにて、新しいプロジェクトを作成する</li>
+			<li><a href="https://vrchat.com/home/download" style="display:inline">VRC公式サイトより、VRCSDK3をダウンロードし、</a>プロジェクトへインポート</li>
+			<li><a href="https://github.com/Merlin-san/UdonSharp/releases" style="display:inline">U#公式より、U#をダウンロードし、</a>プロジェクトへインポート</li>
+			<li>当ツール SimpleRPG_System を unitypackageからプロジェクトへインポート</li>
+			<li>Asset/_SimpleRPG_Gimmicks/UDON配下のU#を選択し、ForceCompileScriptボタンを押下する<br>
+				(U#が当ツールの分のみならば、CompileAllUdonSharpProgramsでまとめて処理しても大丈夫です)</li>
+				<img src="img/ForceCompileScript.png" alt="Twitter" width="340" height="340">
+			<li>全てのU#のForceCompileScriptを押下し終えれば導入完了</li>			
+		</ol>
+		<h2 class="underline">動作しないときは</h2>
+		<h5> ForceCompileScriptを押下した際にU#でコンパイルエラーがでる </h5>
+		<p> 以下の可能性があります。影響が少ない順に記載します</p>
+		<ol>
+			<li>プロジェクトフォルダに英数字以外が含まれている場合、コンパイルに失敗する場合があります。<br>プロジェクトのフルパスに英数字以外が含まれないようにフォルダ名の変更してください。</li>
+			<li>UDONが中間ファイルの制作に失敗している場合があります。VRCSDK3とU#を削除して、再導入してみてください。</li>
+		</ol>
+		</p>
+		
+		<h2 class="underline">はじめに</h2>
+		<h5> 公式サンプルの利用 </h5>
+		<p> 以下の機能は、VRCSDK3付属のVRChat Examplesフォルダに公式サンプルが入っています。<br>
+		(数少ない)そのまま使えるものなので、活用するといいでしょう。
+		</p>
+		<ol>
+			<li>旧PlayerMod（ジャンプや移動速度の設定）的なものはVRChat Examples/Prefabs/VRCWorldSettings</li>
+			<li>椅子はVRChat Examples/Prefabs/VRCChair/VRCChair3</li>
+			<li>アバターペデスタルはVRChat Examples/AvatarPedestal</li>
+		</ol>
+		</p>
+		
+		<h5> CombatSystemの利用 </h5>
+		<p> 執筆時点 202/07/15現在、公式のCombatSystemは動作せず、全て自作するしかありません。<br>
+		もしご希望でしたら、有償アセットとなりますが、拙作<a href="https://74-south.booth.pm/items/2143897" style="display:inline">[VRChat向け]シンプルなRPG向けUDONセット</a>をご購入ください。
+		</p>
+		
+	</div>
+</div>
+ 
+</main>
+
+<footer>
+<div class="container">
+
+<div class="row">
+    <div class="col span-4">
+        <h5>Twitter</h5>
+        <p><a href="https://mobile.twitter.com/Penguin3_vrc" > <img src="img/Icon.jpg" alt="Twitter" width="340" height="340"></a></p>
+    </div>
+    <div class="col span-4">
+        <h5>Booth</h5>
+        <p><a href="https://74-south.booth.pm/" > <img src="img/S74Line2.png" alt="Booth" width="340" height="340"></a></p>
+    </div>
+    <div class="col span-4">
+        <h5>VRC_Sample</h5>
+        <p><a href="https://vrchat.com/i/toff-laurenlorenzo-c5963" > <img src="img/TOP.png" alt="VRC" width="340" height="340"></a></p>
+    </div>
+</div>
+</div>
+    </footer>
+    <div class="copyright">
+<div class="container">
+<div class="row">
+    <div class="col">
+    Copyright © <a href="https://popo-design.net" target="_blank">popodesign. </a>
+    
+    </div>    
+        </div>
+    </div>
+        </div>
+<p id="pagetop"><a href="#">TOP</a></p>    
+</body>
+</html>
