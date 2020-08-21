@@ -45,7 +45,8 @@
     </div>
     </header>
     <div class="mainimg">
-              <img src="img/ObjectPool.png" alt="オブジェクトプール" width="800" height="4000">
+              <img src="img/_Trampoline.png" alt="torannporinn 
+              " width="800" height="4000">
         </div>
     <main>
 	<article>
@@ -54,50 +55,35 @@
     <div class="col span-12">
 	<div class="breadcrumb">
 		<ul>
-			<li><a href="index.html">ホーム</a> > オブジェクトプール</li>
+			<li><a href="index.html">ホーム</a> > トランポリン</li>
 		</ul>
 		</div>
-		<p>
-		オブジェクトを任意に出現させる機能です。<br>
-		UDONでは、インスタンスされたオブジェクトの位置が同期されないという破滅的なバグが存在します。<br>
-		そのため、シンプルにオブジェクトを増やすことはお勧めできません。
+	    <p>
+		これはプレイヤーが接触すると、そのプレイヤーを指定方向に跳ばす機能です。<br>
+		主な用途はジャンプ台ですが、横方向に弾くように設置して、アスレチックの障害物にしても面白いかもしれません。
 		</p>
-    
 		<h2 class="underline">クイックスタート</h2>
-				<ol>
-			<li>Assets\_SimpleUDON_Gimmick\Prefabフォルダから、ObjectPoolプレファブをシーンに置く</li>
-			<li>ObjectPoolのPoolObjectsに、出現させるオブジェクトを設定する</li>
-			<li>VRchatSDKのコントロールパネルからBuild&Testを選択し、Useして動作を確認する</li>
+		<ol>
+			<li>Assets\_SimpleUDON_Gimmick\Prefabフォルダから、Trampolineプレファブをシーンに置く</li>
+			<li>VRchatSDKのコントロールパネルからBuild&Testを選択し、動作を確認する</li>
 		</ol>
-		
-<p></p>
 
 	<h2 class="underline">機能解説</h2>
-	<h4 >ObjectsPool</h4>
-	<p>
-		保持したオブジェクトを、インタラクトに反応して順次出現させます。<br>
-		オブジェクトのストックが尽きると、無反応になります。<br>
-		再使用するためには、表示中のオブジェクトを非表示にする必要があります。<br>
+	<h4 >Trampoline</h4>
+	<p>	プレイヤーのあたり判定に反応してプレイヤーを指定方向に跳ばせます。<br>
 		各パラメータは以下の通りです。
 	<pre>
-		<code>
-IsSync
-出現を同期させるかどうか。
-後からワールドに入ったプレイヤーに、すでに表示中のオブジェクトを同期することはありません。
+	<code>
+Power
+プレイヤーを飛ばす力です。
+値は絶対値です。
 
-IsResetVelocity
-出現と同時に、オブジェクトの移動や回転をリセットするかどうか。
-オブジェクトにRigidbodyが付いている場合だけ有効です。
-
-PoolObjects
-出現させるオブジェクトの配列。
-全て同じ種類のオブジェクトである必要はありませんので、
-まったく違うオブジェクトが順番に出現するようにもできます。
-
-Locations
-オブジェクトを出現させる位置と角度
-		</code>
+Slider
+Powerの何割の力でプレイヤーを飛ばすかを、ゲーム中で調整するスライダーです
+不要ならば、MAXにしてCanvasごと非表示にしておくとよいでしょう
+	</code>
 	</pre>
+	</p>	
 	</div>
 	<div class="col span-4">
 	</div>
